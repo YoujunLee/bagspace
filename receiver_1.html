@@ -4,31 +4,28 @@
     <meta charset="utf-8">
     <title>receiver_1 page</title>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"><!-- bootstrap css 사용-->
-    <link rel="stylesheet" type="text/css" href="define_css/receiver1.css"><!-- 직접 정의한 receiver1.css 사용-->
 </head>
 
 <body>
     <!-- 전체 section -->
     <section name="page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-3 col-md-offset-4">
-                    <!-- 총 가격이 어떻게 되나요? Section-->
-                    <section name="question">
-                        <h5>총 가격이 어떻게 되나요?</h5>
-                    </section>
-                    <!--button -->
-                    <section name="buttons">
-                        <button type="button" class="btn btn-default btn-block" id="less"><!-- todo 10만원 이하 버튼 다음페이지로 넘기기-->
-                            10만원 이하
-                        </button>
+        <div class="col-xs-12 col-md-4 col-md-offset-4">
+            <!-- 총 가격이 어떻게 되나요? Section-->
+            <section name="question">
+                <h5 style="color:blue; font-weight: bold; text-align: center;">총 가격이 어떻게 되나요?</h5>
+            </section>
+            <!--button -->
+            <section name="buttons" class="buttons">
+                <div class="col-xs-12 col-md-6 col-md-offset-3">
+                    <button type="button" class="btn btn-default btn-block" id="less"><!-- todo 10만원 이하 버튼 다음페이지로 넘기기-->
+                        10만원 이하
+                    </button>
                     <br>
-                        <button type="button" class="btn btn-default btn-block" id="over"><!-- todo 10만원 이상 버튼 다음페이지로 넘기기-->
-                            10만원 이상
-                        </button>
-                    </section>
+                    <button type="button" class="btn btn-default btn-block" id="over"><!-- todo 10만원 이상 버튼 다음페이지로 넘기기-->
+                        10만원 이상
+                </button>
                 </div>
-            </div>
+            </section>
         </div>
     </section>
 </body>
