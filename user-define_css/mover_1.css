@@ -1,0 +1,9 @@
+.container{
+    width: 90%;
+}
+
+#submit{
+    background: rgb(41, 128, 185);
+    font-weight: bold;
+    color: white;
+}

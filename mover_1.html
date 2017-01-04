@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>mover_1 page</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"><!-- bootstrap css 사용-->
+        <link rel="stylesheet" type="text/css" href="user-define_css/mover_1.css">
+    </head>
+    <body>
+        <!-- 전체 Section -->
+        <section name="page">
+            <div class="container">
+                    <!-- 출발지 & 도착지 Section-->
+                    <section>
+                        <div class="row">
+                        <!--출발지-->
+                            <div class="col-xs-6 col-md-2 col-md-offset-4">  
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="4" placeholder="출발지"></textarea>
+                                </div>
+                            </div>
+                            <!--도착지-->
+                            <div class="col-xs-6 col-md-2">  
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="4" placeholder="도착지"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- 가는날 Section-->
+                    <section>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-4 col-md-offset-4">
+                                 <div class="form-group">
+                                     <textarea class="form-control" rows="3" placeholder="가는날"></textarea>
+                                 </div>
+                            </div>
+                        </div>
+                    <!-- todo : 달력 기능 넣기 -->
+                    </section>
+                    <!-- 여분무게/여분크기 Section -->
+                    <section>
+                        <div class="row">
+                            <!--여분무게-->
+                            <div class="col-xs-6 col-md-2 col-md-offset-4">  
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="4" placeholder="여분무게"></textarea>
+                                </div>
+                            </div>
+                            <!--여분크기-->
+                            <div class="col-xs-6 col-md-2">  
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="4" placeholder="여분크기"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Submit Section -->
+                    <section>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-4 col-md-offset-4">
+                                <button type="button" class="btn btn-default btn-block" id="submit"><!-- todo 10만원 이하 버튼 다음페이지로 넘기기-->
+                                Submit
+                                </button>
+                            </div>
+                        </div>
+                     <!-- todo : submit 버튼 기능 -->   
+                     </section>
+                </div> <!-- 전체 container div -->
+        </section>
+    </body>
+</html>
