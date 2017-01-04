@@ -1,0 +1,12 @@
+
+/* 총 가격이 어떻게 되나요*/
+h5{
+    color:blue; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+.buttons{
+    width: 20%;
+    margin: 0px auto;
+}
