@@ -2,6 +2,13 @@
     width: 90%;
 }
 
+.block textarea{
+    background-color: rgb(250, 250, 250);
+    font-weight: bold;
+    color:black;
+    
+}
+
 #select{
     background: rgb(41, 128, 185);
     font-weight: bold;
