@@ -6,6 +6,7 @@
         <title>mover_1 page</title>
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"><!-- bootstrap css 사용-->
         <link rel="stylesheet" type="text/css" href="user-define_css/mover_1.css">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
     </head>
     <body>
         <!-- 전체 Section -->
@@ -17,13 +18,20 @@
                         <!--출발지-->
                             <div class="col-xs-6 col-md-2 col-md-offset-4">  
                                 <div class="form-group">
-                                    <textarea class="form-control" rows="4" placeholder="출발지"></textarea>
+                                    <textarea class="form-control blank" rows="4" placeholder="출발지" readonly="readonly"></textarea>
                                 </div>
                             </div>
+                            <!-- 출발지 클릭 시 애니메이션 -->
+                            <script>
+                            $('.departure_blank').click( function(){
+                                $('.click').removeClass("click");
+                                $(this).addClass("click");
+                            })
+                            </script>
                             <!--도착지-->
                             <div class="col-xs-6 col-md-2">  
                                 <div class="form-group">
-                                    <textarea class="form-control" rows="4" placeholder="도착지"></textarea>
+                                    <textarea class="form-control blank" rows="4" placeholder="도착지" readonly="readonly"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -33,7 +41,7 @@
                         <div class="row">
                             <div class="col-xs-12 col-md-4 col-md-offset-4">
                                  <div class="form-group">
-                                     <textarea class="form-control" rows="3" placeholder="가는날"></textarea>
+                                     <textarea class="form-control blank" rows="3" placeholder="가는날" readonly="readonly"></textarea>
                                  </div>
                             </div>
                         </div>
@@ -45,13 +53,13 @@
                             <!--여분무게-->
                             <div class="col-xs-6 col-md-2 col-md-offset-4">  
                                 <div class="form-group">
-                                    <textarea class="form-control" rows="4" placeholder="여분무게"></textarea>
+                                    <textarea class="form-control blank" rows="4" placeholder="여분무게" readonly="readonly"></textarea>
                                 </div>
                             </div>
                             <!--여분크기-->
                             <div class="col-xs-6 col-md-2">  
                                 <div class="form-group">
-                                    <textarea class="form-control" rows="4" placeholder="여분크기"></textarea>
+                                    <textarea class="form-control blank" rows="4" placeholder="여분크기" readonly="readonly"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -69,6 +77,14 @@
                      </section>
                    
                 </div> <!-- 전체 container div -->
+                
+                <script>
+                //클릭 시 요소 색깔 변경 애니메이션               
+                $('.blank').click( function(){
+                    $('.click').removeClass("click");
+                    $(this).addClass("click");
+                })
+                </script>
         </section>
     </body>
 </html>
