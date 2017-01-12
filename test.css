@@ -1,0 +1,25 @@
+#textAreaWrap {
+    position: relative;
+    background-color: white;
+}
+
+#textArea {
+    position: relative;
+    z-index: 1;
+    width: 350px;
+    height: 100px;
+    min-height: 100px;
+    padding: 6px 12px;
+    resize: vertical;
+    background-color: transparent;
+    /* When set background-color: transparent - Firefox  displays
+    unpleasant textarea border. Set border style to fix it.*/
+    border: 1px solid #a5a5a5;
+}
+
+#placeholderDiv {
+    position: absolute;
+    top: 0;
+    padding: 6px 13px;
+    color: #a5a5a5;
+}
