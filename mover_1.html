@@ -17,17 +17,18 @@
                         <div class="row">
                         <!--출발지-->
                             <div class="col-xs-6 col-md-2 col-md-offset-4">  
-                                <div class="form-group">
+                                <div class="form-group departure">
                                     <textarea class="form-control blank" rows="4" placeholder="출발지" readonly="readonly"></textarea>
                                 </div>
                             </div>
+                            
                             <!-- 출발지 클릭 시 애니메이션 -->
                             <script>
-                            $('.departure_blank').click( function(){
-                                $('.click').removeClass("click");
-                                $(this).addClass("click");
-                            })
+                             $('.departure').click( function scrollToTop() {
+                                $('html, body').scrollTop(0);
+                             })
                             </script>
+
                             <!--도착지-->
                             <div class="col-xs-6 col-md-2">  
                                 <div class="form-group">
@@ -84,6 +85,9 @@
                     $('.click').removeClass("click");
                     $(this).addClass("click");
                 })
+
+                //todo : textarea -> textarea 클릭 말고 다른 데 누를 때 textarea 배경 원래대로 복귀하도록 해야.
+
                 </script>
         </section>
     </body>
