@@ -14,28 +14,12 @@ import { Platform } from 'ionic-angular';
     </ion-content>
 `})
 export class TabsPage {
-  isAndroid: boolean = false;
-
-  constructor(platform: Platform) {
-    this.isAndroid = platform.is('android');
-  }
+ 
 }
 
 @Component({
-  template: `
-  <ion-tabs class="tabs-icon">
-    <ion-tab tabIcon="contact" [root]="rootPage">1</ion-tab>
-    <ion-tab tabIcon="compass" [root]="rootPage"></ion-tab>
-    <ion-tab tabIcon="analytics" [root]="rootPage"></ion-tab>
-    <ion-tab tabIcon="settings" [root]="rootPage"></ion-tab>
-  </ion-tabs>
-`})
-export class IconPage {
+  templateUrl: 'tabs.html'
+})
+ export class IconPage {
   rootPage = TabsPage;
-
-  isAndroid: boolean = false;
-
-  constructor(platform: Platform) {
-    this.isAndroid = platform.is('android');
-  }
 }
