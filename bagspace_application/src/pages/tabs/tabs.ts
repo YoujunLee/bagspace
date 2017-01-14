@@ -7,7 +7,12 @@ import { Platform } from 'ionic-angular';
   template: `
     <ion-header>
       <ion-navbar [color]="isAndroid ? 'danger' : 'primary'">
-        <ion-title>bagspace</ion-title>
+          <ion-buttons start>
+            <button ion-button icon-only>
+              <ion-icon name="list"></ion-icon>
+            </button>
+          </ion-buttons>
+          <ion-title>bagspace</ion-title>
       </ion-navbar>
     </ion-header>
     <ion-content>
