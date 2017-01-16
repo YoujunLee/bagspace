@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-
 import { HomePage } from '../pages/home/home';
+<<<<<<< HEAD
 import { IconPage } from '../pages/tabs/tabs';
+=======
+//import { MoverFirstPage } from '../pages/mover-first/mover-first';
+>>>>>>> a737a47e787a94a99c9dfda96d45b88aabb946c1
 
 @Component({
   templateUrl: 'app.html'
