@@ -1,0 +1,10 @@
+ <ion-header>
+     <ion-navbar [color]="isAndroid ? 'danger' : 'primary'">
+          <ion-searchbar *ngIf="search_click==1"  (click)="search_click=2" placeholder="어디로 가시나요?" ></ion-searchbar>
+          <button *ngIf="search_click==2" ion-button full outline class="upper-tab-button">날짜로 찾기</button>
+          <button *ngIf="search_click==2" ion-button full outline class="upper-tab-button">장소로 찾기</button>
+     </ion-navbar>
+</ion-header>
+
+<ion-content>
+</ion-content>
