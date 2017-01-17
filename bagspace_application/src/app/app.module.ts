@@ -4,6 +4,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { TabsPage, IconPage } from '../pages/tabs/tabs';
 import { UpperTabsPage } from '../pages/upper-tabs/upper-tabs';
+import { ProfilePage } from '../pages/profile/profile';
+
 
 @NgModule({
   declarations: [
@@ -11,7 +13,9 @@ import { UpperTabsPage } from '../pages/upper-tabs/upper-tabs';
     HomePage,
     TabsPage,
     IconPage,
-    UpperTabsPage
+    UpperTabsPage,
+    TabsPage, IconPage,
+    ProfilePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -22,7 +26,8 @@ import { UpperTabsPage } from '../pages/upper-tabs/upper-tabs';
     HomePage,
     TabsPage,
     IconPage,
-    UpperTabsPage
+    UpperTabsPage,
+    ProfilePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

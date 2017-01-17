@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { HomePage } from '../pages/home/home';
-import { IconPage } from '../pages/tabs/tabs';
+import { TabsPage, IconPage } from '../pages/tabs/tabs';
+import { ProfilePage } from '../pages/profile/profile';
+
 
 @Component({
   templateUrl: 'app.html'
