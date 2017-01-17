@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
      <page-upper-tabs></page-upper-tabs>
 `})
 export class TabsPage {
-
 }
 
 @Component({
