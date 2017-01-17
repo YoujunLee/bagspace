@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ProfilePage } from '../profile/profile';
-import { LoginPage } from '../login/login';
 
 @Component({
   template: `
@@ -15,5 +14,4 @@ export class TabsPage {
  export class IconPage {
   rootPage = TabsPage;
   profilePage = ProfilePage;
-  login = LoginPage;
 }
