@@ -4,24 +4,21 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { TabsPage, IconPage } from '../pages/tabs/tabs';
 import { UpperTabsPage } from '../pages/upper-tabs/upper-tabs';
-import { ProfilePage } from '../pages/profile/profile';
 import { LoginPage } from '../pages/login/login';
-import { HelperPage } from '../pages/helper/helper';
 
+import { ProfileModule } from './modules/profile.moudle';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    TabsPage,
-    IconPage,
     UpperTabsPage,
     TabsPage, IconPage,
-    ProfilePage,
-    LoginPage, HelperPage
+    LoginPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ProfileModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -30,8 +27,7 @@ import { HelperPage } from '../pages/helper/helper';
     TabsPage,
     IconPage,
     UpperTabsPage,
-    ProfilePage,
-    LoginPage, HelperPage
+    LoginPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
