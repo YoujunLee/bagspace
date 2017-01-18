@@ -1,7 +1,7 @@
 import { NgModule , ErrorHandler} from '@angular/core';
 import {IonicModule, IonicErrorHandler } from 'ionic-angular';
 import {CommonModule} from '@angular/common';
-import { CategoryPage } from '../../pages/category/category';
+import { CategoryPage } from '../../pages/receiver_group/category/category';
 @NgModule({
   declarations: [
     CategoryPage

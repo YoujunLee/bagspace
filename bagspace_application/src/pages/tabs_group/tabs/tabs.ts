@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ProfilePage } from '../profile_group/profile/profile';
-import { CategoryPage } from '../category/category';
+import { ProfilePage } from '../../profile_group/profile/profile';
+import { CategoryPage } from '../../receiver_group/category/category';
 
 @Component({
   template: `

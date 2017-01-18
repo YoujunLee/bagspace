@@ -2,8 +2,6 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { TabsPage, IconPage } from '../pages/tabs/tabs';
-import { UpperTabsPage } from '../pages/upper-tabs/upper-tabs';
 import { LoginPage } from '../pages/login/login';
 
 import { ProfileModule } from './modules/profile.module';

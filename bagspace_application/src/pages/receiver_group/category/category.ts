@@ -1,5 +1,5 @@
-import { Component,OnInit } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { Component} from '@angular/core';
+import { NavController} from 'ionic-angular';
 import {Http} from '@angular/http'
 /*
   Generated class for the Category page.
