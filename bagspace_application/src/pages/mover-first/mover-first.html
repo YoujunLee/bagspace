@@ -13,35 +13,35 @@
                     <section>
                         <div class="row firstRow">
                         <!--출발지-->
-                            <div class="col-xs-6 col-md-2 col-md-offset-4">  
-                                <div class="form-group">
-                                    <textarea class="form-control blank" rows="4" id="departure"
-                                    placeholder="출발지" readonly="readonly" (click)="country1Select()" 
-                                    [(ngModel)]="landmark.departure"></textarea>
-                                </div>
-                            </div>
-                            <!--도착지-->
-                            <div class="col-xs-6 col-md-2"> 
-                                <div class="form-group">
-                                    <textarea class="form-control blank" rows="4" placeholder="도착지" id="arrival"
-                                    readonly="readonly" (click)="country2Select()" [(ngModel)]="landmark.arrival"></textarea>
-                                </div>
+                        <div class="col-xs-6 col-md-2 col-md-offset-4">  
+                            <div class="form-group">
+                                <textarea class="form-control blank" rows="4" id="departure"
+                                placeholder="출발지" readonly="readonly" (click)="country1Select()" 
+                                [(ngModel)]="landmark.departure"></textarea>
                             </div>
                         </div>
+                            <!--도착지-->
+                        <div class="col-xs-6 col-md-2"> 
+                            <div class="form-group">
+                                <textarea class="form-control blank" rows="4" placeholder="도착지" id="arrival"
+                                readonly="readonly" (click)="country2Select()" [(ngModel)]="landmark.arrival"></textarea>
+                            </div>
+                        </div>
+                    </div>
                     </section>
                     <!-- 가는날 Section-->
                     <section>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-4 col-md-offset-4">
-                                 <div class="form-group">
-                                        <input type="text" class="form-control blank" rows="3" placeholder="가는날"
-                                         readonly="readonly">
-                                    <ion-item>
-                                        <ion-datetime displayFormat="YYYY/MM/DD" pickerFormat="YYYY/MM/DD" [(ngModel)]="datetime"></ion-datetime>
-                                    </ion-item> 
-                                 </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4 col-md-offset-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control blank" rows="3" placeholder="가는날"
+                                    readonly="readonly">
+                                <ion-item>
+                                <ion-datetime displayFormat="YYYY/MM/DD" pickerFormat="YYYY/MM/DD" [(ngModel)]="datetime"></ion-datetime>
+                                </ion-item> 
                             </div>
                         </div>
+                    </div>
                     </section>
                     <!-- 가는날 애니메이션 -->
                     <!-- 여분무게/여분크기 Section -->
