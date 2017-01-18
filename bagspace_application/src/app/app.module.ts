@@ -7,26 +7,22 @@ import { UpperTabsPage } from '../pages/upper-tabs/upper-tabs';
 import { LoginPage } from '../pages/login/login';
 
 import { ProfileModule } from './modules/profile.moudle';
+import { TabModule } from './modules/tab.module';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    UpperTabsPage,
-    TabsPage, IconPage,
     LoginPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
-    ProfileModule
+    ProfileModule, TabModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    TabsPage,
-    IconPage,
-    UpperTabsPage,
     LoginPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
