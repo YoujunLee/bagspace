@@ -13,59 +13,67 @@
 </ion-header>
 
 
-<ion-content padding>
-<section name="header">
-    <div class=" header col-xs-12  col-md-4 col-md-offset-4">
+<ion-content padding class="action-sheets-basic-page"> 
+	<section name="header">
+    <div class=" header ">
     카테고리
     </div>
 	</section>
     <section name="content">
-    <div class="col-xs-12  col-md-4 col-md-offset-4 list">
+    <div class=" list">
     <div class="item1">
-        <p style="float: left; width: 33%;" >화장품 </p>
-        <p style="float: left; width: 33%;" > </p>
-        <p style="float: left; width: 33%; text-align: right; padding-right:10px; " ><span id="a1" class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span> </p>      
-       <div onclick="location.href=''">
+      <div class="item_top" (click)="onlyone(1);">
+       <p  class= "item_name" >화장품 </p>
+        <p  class="icon" >
+        <span *ngIf="isActive1==false"  class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span>
+         <span *ngIf="isActive1==true"  class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></p>      
+      </div>
+       <div class = "item" *ngIf="isActive1==true" onclick="location.href=''">
            스킨
        </div>
-       <div onclick="location.href=''">
+       <div class = "item" *ngIf="isActive1==true" onclick="location.href=''">
            로션
        </div>
-       <div onclick="location.href=''">
+       <div class = "item" *ngIf="isActive1==true" onclick="location.href=''">
            수분크림
        </div>
       </div>
-       <div class="item2">
-        <p style="float: left; width: 33%;" >생활용품 </p>
-        <p style="float: left; width: 33%;" > </p>
-        <p style="float: left; width: 33%; text-align: right; padding-right:10px; " ><span id="a2" class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span> </p> 
-       <div onclick="location.href=''">
-           세제
+       <div class="item1">
+      <div class="item_top" (click)="onlyone(2);">
+        <p  class= "item_name" >생활용품 </p>
+        <p  class="icon" >
+         <span *ngIf="isActive2==false"  class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span>
+         <span *ngIf="isActive2==true"  class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></p>         
+      </div>
+       <div class = "item" *ngIf="isActive2==true" onclick="location.href=''">
+           과자
        </div>
-       <div onclick="location.href=''">
-           가위
+       <div class = "item" *ngIf="isActive2==true" onclick="location.href=''">
+           물
        </div>
-       <div onclick="location.href=''">
-           풀
+       <div class = "item" *ngIf="isActive2==true" onclick="location.href=''">
+           쌀
        </div>
       </div>
-        <div class="item3">
-         <p style="float: left; width: 33%;" >음식 </p>
-        <p style="float: left; width: 33%;" > </p>
-        <p style="float: left; width: 33%; text-align: right; padding-right:10px; " ><span id="a3" class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span> </p> 
-       <div onclick="location.href=''">
-           고기
+     <div class="item1">
+      <div class="item_top" (click)="onlyone(3);">
+        <p  class= "item_name" >옷 </p>
+        <p  class="icon" >
+          <span *ngIf="isActive3==false"  class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span>
+         <span *ngIf="isActive3==true"  class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></p>           
+      </div>
+       <div class = "item" *ngIf="isActive3==true" onclick="location.href=''">
+           신발
        </div>
-       <div onclick="location.href=''">
-           음료
+       <div class = "item" *ngIf="isActive3==true" onclick="location.href=''">
+          코트
        </div>
-       <div onclick="location.href=''">
-           물
+       <div class = "item" *ngIf="isActive3==true" onclick="location.href=''">
+           장갑
        </div>
       </div>
 </div>
     
 </section>
+ </ion-content> 
 
- 
-</ion-content>
