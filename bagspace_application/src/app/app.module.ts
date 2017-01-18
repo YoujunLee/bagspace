@@ -8,6 +8,7 @@ import { LoginPage } from '../pages/login/login';
 
 import { ProfileModule } from './modules/profile.moudle';
 import { TabModule } from './modules/tab.module';
+import { ReceiverModule } from './modules/receiver.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { TabModule } from './modules/tab.module';
   ],
   imports: [
     IonicModule.forRoot(MyApp),
-    ProfileModule, TabModule
+    ProfileModule, TabModule,ReceiverModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ProfilePage } from '../profile/profile';
+import { CategoryPage } from '../category/category';
 
 @Component({
   template: `
@@ -14,4 +15,5 @@ export class TabsPage {
  export class IconPage {
   rootPage = TabsPage;
   profilePage = ProfilePage;
+  categoryPage = CategoryPage;
 }

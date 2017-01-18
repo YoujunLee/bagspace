@@ -5,70 +5,64 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>category</ion-title>
+  <ion-navbar [color]="primary">
+    <ion-title>Category</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding class="action-sheets-basic-page"> 
-	<section name="header">
-    <div class=" header ">
-    카테고리
-    </div>
-	</section>
+<ion-content  class="action-sheets-basic-page"> 
+	
     <section name="content">
-    <div class=" list">
-    <div class="item1">
-      <div class="item_top" (click)="onlyone(1);">
-       <p  class= "item_name" >화장품 </p>
-        <p  class="icon" >
+    <div class=" list_category">
+    <div class="item1_category">
+      <div class="item_top_category" (click)="onlyone(1);">
+       <p  class= "item_name_category" >화장품 </p>
+        <p  class="icon_category" >
         <span *ngIf="isActive1==false"  class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span>
          <span *ngIf="isActive1==true"  class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></p>      
       </div>
-       <div class = "item" *ngIf="isActive1==true" onclick="location.href=''">
+       <div class = "item_category" *ngIf="isActive1==true" onclick="location.href=''">
            스킨
        </div>
-       <div class = "item" *ngIf="isActive1==true" onclick="location.href=''">
+       <div class = "item_category" *ngIf="isActive1==true" onclick="location.href=''">
            로션
        </div>
-       <div class = "item" *ngIf="isActive1==true" onclick="location.href=''">
+       <div class = "item_category" *ngIf="isActive1==true" onclick="location.href=''">
            수분크림
        </div>
       </div>
-       <div class="item1">
-      <div class="item_top" (click)="onlyone(2);">
-        <p  class= "item_name" >생활용품 </p>
-        <p  class="icon" >
+       <div class="item1_category">
+      <div class="item_top_category" (click)="onlyone(2);">
+        <p  class= "item_name_category" >생활용품 </p>
+        <p  class="icon_category" >
          <span *ngIf="isActive2==false"  class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span>
          <span *ngIf="isActive2==true"  class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></p>         
       </div>
-       <div class = "item" *ngIf="isActive2==true" onclick="location.href=''">
+       <div class = "item_category" *ngIf="isActive2==true" onclick="location.href=''">
            과자
        </div>
-       <div class = "item" *ngIf="isActive2==true" onclick="location.href=''">
+       <div class = "item_category" *ngIf="isActive2==true" onclick="location.href=''">
            물
        </div>
-       <div class = "item" *ngIf="isActive2==true" onclick="location.href=''">
+       <div class = "item_category" *ngIf="isActive2==true" onclick="location.href=''">
            쌀
        </div>
       </div>
-     <div class="item1">
-      <div class="item_top" (click)="onlyone(3);">
-        <p  class= "item_name" >옷 </p>
-        <p  class="icon" >
+     <div class="item1_category">
+      <div class="item_top_category" (click)="onlyone(3);">
+        <p  class= "item_name_category" >옷 </p>
+        <p  class="icon_category" >
           <span *ngIf="isActive3==false"  class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span>
          <span *ngIf="isActive3==true"  class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></p>           
       </div>
-       <div class = "item" *ngIf="isActive3==true" onclick="location.href=''">
+       <div class = "item_category" *ngIf="isActive3==true" onclick="location.href=''">
            신발
        </div>
-       <div class = "item" *ngIf="isActive3==true" onclick="location.href=''">
+       <div class = "item_category" *ngIf="isActive3==true" onclick="location.href=''">
           코트
        </div>
-       <div class = "item" *ngIf="isActive3==true" onclick="location.href=''">
+       <div class = "item_category" *ngIf="isActive3==true" onclick="location.href=''">
            장갑
        </div>
       </div>
