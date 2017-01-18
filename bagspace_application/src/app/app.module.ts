@@ -6,6 +6,7 @@ import { TabsPage, IconPage } from '../pages/tabs/tabs';
 import { UpperTabsPage } from '../pages/upper-tabs/upper-tabs';
 import { ProfilePage } from '../pages/profile/profile';
 import { LoginPage } from '../pages/login/login';
+import { HelperPage } from '../pages/helper/helper';
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { LoginPage } from '../pages/login/login';
     UpperTabsPage,
     TabsPage, IconPage,
     ProfilePage,
-    LoginPage
+    LoginPage, HelperPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -30,7 +31,7 @@ import { LoginPage } from '../pages/login/login';
     IconPage,
     UpperTabsPage,
     ProfilePage,
-    LoginPage
+    LoginPage, HelperPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
