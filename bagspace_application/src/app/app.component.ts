@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-import { HomePage } from '../pages/home/home';
-//import { MoverFirstPage } from '../pages/mover-first/mover-first';
+//import { HomePage } from '../pages/home/home';
+import { MoverFirstPage } from '../pages/mover-first/mover-first';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = HomePage;
+  rootPage = MoverFirstPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {

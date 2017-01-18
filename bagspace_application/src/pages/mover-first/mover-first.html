@@ -1,12 +1,9 @@
 
 <ion-header>
-
   <ion-navbar>
     <ion-title>mover_first</ion-title>
   </ion-navbar>
-
 </ion-header>
-
 
 <ion-content padding>
   <!-- 전체 Section -->
@@ -19,14 +16,15 @@
                             <div class="col-xs-6 col-md-2 col-md-offset-4">  
                                 <div class="form-group">
                                     <textarea class="form-control blank" rows="4" id="departure"
-                                    placeholder="출발지" readonly="readonly" (click)="placeSelect()"></textarea>
+                                    placeholder="출발지" readonly="readonly" (click)="country1Select()" 
+                                    [(ngModel)]="landmark.departure"></textarea>
                                 </div>
                             </div>
                             <!--도착지-->
                             <div class="col-xs-6 col-md-2"> 
                                 <div class="form-group">
                                     <textarea class="form-control blank" rows="4" placeholder="도착지" id="arrival"
-                                    readonly="readonly" (click)="placeSelect()"></textarea>
+                                    readonly="readonly" (click)="country2Select()" [(ngModel)]="landmark.arrival"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -36,14 +34,11 @@
                         <div class="row">
                             <div class="col-xs-12 col-md-4 col-md-offset-4">
                                  <div class="form-group">
-                                     <ion-item>
-                                        <ion-label class="date">가는 날짜</ion-label>
+                                        <input type="text" class="form-control blank" rows="3" placeholder="가는날"
+                                         readonly="readonly">
+                                    <ion-item>
                                         <ion-datetime displayFormat="YYYY/MM/DD" pickerFormat="YYYY/MM/DD" [(ngModel)]="datetime"></ion-datetime>
                                     </ion-item> 
-                                     <!--
-                                     <input type="text" class="form-control blank" rows="3" placeholder="가는날" id="calendar"
-                                    readonly="readonly">
-                                    -->
                                  </div>
                             </div>
                         </div>
@@ -55,13 +50,13 @@
                             <!--여분무게-->
                             <div class="col-xs-6 col-md-2 col-md-offset-4">  
                                 <div class="form-group">
-                                    <textarea class="form-control blank" rows="4" placeholder="여분무게" readonly="readonly"></textarea>
+                                    <textarea class="form-control blank" rows="4" placeholder="여분무게(kg)"></textarea>
                                 </div>
                             </div>
                             <!--여분크기-->
                             <div class="col-xs-6 col-md-2">  
                                 <div class="form-group">
-                                    <textarea class="form-control blank" rows="4" placeholder="여분크기" readonly="readonly"></textarea>
+                                    <textarea class="form-control blank" rows="4" placeholder="여분크기(cm*cm*cm)"></textarea>
                                 </div>
                             </div>
                         </div>
