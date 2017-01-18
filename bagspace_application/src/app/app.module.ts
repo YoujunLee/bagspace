@@ -6,7 +6,7 @@ import { TabsPage, IconPage } from '../pages/tabs/tabs';
 import { UpperTabsPage } from '../pages/upper-tabs/upper-tabs';
 import { LoginPage } from '../pages/login/login';
 
-import { ProfileModule } from './modules/profile.moudle';
+import { ProfileModule } from './modules/profile.module';
 import { TabModule } from './modules/tab.module';
 import { ReceiverModule } from './modules/receiver.module';
 

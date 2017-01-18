@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProfilePage } from '../profile/profile';
+import { ProfilePage } from '../profile_group/profile/profile';
 import { CategoryPage } from '../category/category';
 
 @Component({
