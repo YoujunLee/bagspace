@@ -15,13 +15,13 @@
   </ion-grid>
   
   <ion-list>
-    <ion-item>
+    <ion-item (click)="openPage(invite)">
     <br>
      <ion-icon name="person-add" item-left></ion-icon>
      <h1 class="font_black">친구 초대하기</h1>
      <br>
     </ion-item>
-    <ion-item (click)="openPage()">
+    <ion-item (click)="openPage(settings)">
     <br>
      <ion-icon name="settings" item-left></ion-icon>
      <h1 class="font_black">환경설정</h1>

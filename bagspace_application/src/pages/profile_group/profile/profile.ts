@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {  NavController, ModalController, NavParams } from 'ionic-angular';
 import { HelperPage } from '../helper/helper';
 import { SettingPage } from '../setting/setting';
+import { InvitePage } from '../invite/invite';
 
 @Component({
   selector: 'page-profile',
@@ -14,8 +15,11 @@ export class ProfilePage {
     let modal = this.modalCtrl.create(HelperPage);
     modal.present();
   }
-  
-   openPage() {
-    this.nav.push(SettingPage);
+
+   openPage(page) {
+    this.nav.push(page);
   }
+
+  settings=SettingPage;
+  invite=InvitePage;
 }
