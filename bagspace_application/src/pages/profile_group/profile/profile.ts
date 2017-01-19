@@ -14,7 +14,7 @@ export class ProfilePage {
     let modal = this.modalCtrl.create(HelperPage);
     modal.present();
   }
-
+  
    openPage() {
     this.nav.push(SettingPage);
   }
