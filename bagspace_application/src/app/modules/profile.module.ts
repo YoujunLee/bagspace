@@ -4,12 +4,13 @@ import {CommonModule} from '@angular/common';
 import { ProfilePage } from '../../pages/profile_group/profile/profile';
 import { HelperPage } from '../../pages/profile_group/helper/helper';
 import { SettingPage } from '../../pages/profile_group/setting/setting';
+import { InvitePage } from '../../pages/profile_group/invite/invite';
 
 
 @NgModule({
-  declarations: [ProfilePage, HelperPage, SettingPage],
+  declarations: [ProfilePage, HelperPage, SettingPage, InvitePage],
   imports: [IonicModule, CommonModule],
-  entryComponents: [ProfilePage, HelperPage, SettingPage],
+  entryComponents: [ProfilePage, HelperPage, SettingPage, InvitePage],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class ProfileModule {}
