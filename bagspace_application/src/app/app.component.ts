@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-//import { HomePage } from '../pages/home/home';
-//import { MoverFirstPage } from '../pages/mover-first/mover-first';
-import { ReceiverPlaceDatePage } from '../pages/receiver-place-date/receiver-place-date';
+import { HomePage } from '../pages/home/home';
+import { MoverFirstPage } from '../pages/mover-first/mover-first';
+//import { ReceiverPlaceDatePage } from '../pages/receiver-place-date/receiver-place-date';
+import { PopoverPage } from '../pages/popover/popover';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = ReceiverPlaceDatePage;
+  rootPage = PopoverPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {

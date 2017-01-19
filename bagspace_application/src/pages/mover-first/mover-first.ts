@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Http } from '@angular/http';
-import { Platform, ActionSheetController } from 'ionic-angular';
+//import { Platform, ActionSheetController } from 'ionic-angular';
+
 
 @Component({
   selector: 'page-mover-first',
@@ -11,14 +12,18 @@ export class MoverFirstPage {
   
   landmark:any = {departure:'', arrival:''};  
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public http:Http,
-  public platform: Platform, public actionsheetCtrl: ActionSheetController) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http:Http) {}
+  
+  //public platform: Platform, public actionsheetCtrl: ActionSheetController) 
+
+
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MoverFirstPage');
   }
 
 //todo : 나중에 어떻게 확장할 것인가, 장소가 많아지면 어떻게 유지보수 할 것인가??
+  
+  /* actionSheet 캔슬...
   country1Select() {
       let countrySheet = this.actionsheetCtrl.create({
         title: '나라 선택',
@@ -26,7 +31,6 @@ export class MoverFirstPage {
         buttons: [
           {
             text: '대한민국',
-            role: 'cancle',
             icon: !this.platform.is('ios') ? 'trash' : null,
             handler: () => {
               this.city1Select();
@@ -55,7 +59,6 @@ export class MoverFirstPage {
           },
           {
             text: '이스라엘',
-            role: 'cancel', // will always sort to be on the bottom
             icon: !this.platform.is('ios') ? 'close' : null,
             handler: () => {
               
@@ -102,7 +105,6 @@ export class MoverFirstPage {
         },
         {
           text: '포항(Pohang)',
-          role: 'cancel', // will always sort to be on the bottom
           icon: !this.platform.is('ios') ? 'close' : null,
           handler: () => {
             this.landmark.departure = "포항(Pohang)";
@@ -120,7 +122,6 @@ export class MoverFirstPage {
       buttons: [
         {
           text: '서울',
-          role: 'cancle',
           icon: !this.platform.is('ios') ? 'trash' : null,
           handler: () => {
             this.landmark2Select();
@@ -146,7 +147,6 @@ export class MoverFirstPage {
         },
         {
           text: '포항',
-          role: 'cancel', // will always sort to be on the bottom
           icon: !this.platform.is('ios') ? 'close' : null,
           handler: () => {
           }
@@ -163,7 +163,6 @@ export class MoverFirstPage {
         buttons: [
           {
             text: '대한민국',
-            role: 'cancle',
             icon: !this.platform.is('ios') ? 'trash' : null,
             handler: () => {
               this.city2Select();
@@ -190,7 +189,6 @@ export class MoverFirstPage {
           },
           {
             text: '이스라엘',
-            role: 'cancel', // will always sort to be on the bottom
             icon: !this.platform.is('ios') ? 'close' : null,
             handler: () => {
             }
@@ -207,7 +205,6 @@ export class MoverFirstPage {
       buttons: [
         {
           text: '스타벅스(StarBucks)',
-          role: 'cancle',
           icon: !this.platform.is('ios') ? 'trash' : null,
           handler: () => {
             this.landmark.arrival = "스타벅스(StarBucks)";
@@ -236,7 +233,6 @@ export class MoverFirstPage {
         },
         {
           text: '서울역(Seoul-Station)',
-          role: 'cancel', // will always sort to be on the bottom
           icon: !this.platform.is('ios') ? 'close' : null,
           handler: () => {
             this.landmark.arrival = "서울역(Seoul-Station)";
@@ -246,4 +242,5 @@ export class MoverFirstPage {
     });
     landmarkSheet.present();
   }//landmarkSelect
+  */
 }

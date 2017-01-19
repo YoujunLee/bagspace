@@ -4,13 +4,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { MoverFirstPage } from '../pages/mover-first/mover-first';
 import { ReceiverPlaceDatePage } from '../pages/receiver-place-date/receiver-place-date';
+import { PopoverPage } from '../pages/popover/popover';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     MoverFirstPage,
-    ReceiverPlaceDatePage
+    ReceiverPlaceDatePage,
+    PopoverPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -20,7 +22,8 @@ import { ReceiverPlaceDatePage } from '../pages/receiver-place-date/receiver-pla
     MyApp,
     HomePage,
     MoverFirstPage,
-    ReceiverPlaceDatePage
+    ReceiverPlaceDatePage,
+    PopoverPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
