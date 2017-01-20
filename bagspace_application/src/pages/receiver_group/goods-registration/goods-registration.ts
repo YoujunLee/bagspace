@@ -22,10 +22,11 @@ goods = [];
     console.log('ionViewDidLoad GoodsRegistrationPage');
   }
 goCategoryPage(){
+ 
   this.navCtrl.push(CategoryPage);
   this.goods[this.goods.length] = "asd";
 }
 add_good(good:string){
-  this.goods[this.goods.length] = "asd";
+  
 }
 }
