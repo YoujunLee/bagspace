@@ -16,4 +16,5 @@ export class TabsPage {
   rootPage = TabsPage;
   profilePage = ProfilePage;
   categoryPage = CategoryPage;
+
 }
