@@ -13,4 +13,6 @@ export class HelperPage {
   }
 
   reserve_state:boolean=true;
+  payment_state:boolean=true;
+  fee_state:boolean=true;
 }
