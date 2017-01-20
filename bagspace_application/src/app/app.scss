@@ -55,13 +55,20 @@
 .content_center{
     text-align: center;
 }
-/*
-@font-face {
-font-family: AppFont;
-src: url("../assets/font/BMDOHYEON_ttf.ttf");
+.content_left{
+    text-align: left;
 }
 
-body, span, button, h1, h2, h3, h4, h5, h6 {
+.list_margin{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+@font-face {
+font-family: AppFont;
+src: url("../assets/font/BMJUA_ttf.ttf");
+}
+
+body, span, button, h1, h2, h3, h4, h5, h6, p {
 font-family: 'AppFont' !important;
 }
-*/

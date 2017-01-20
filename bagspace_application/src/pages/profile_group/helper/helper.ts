@@ -11,4 +11,6 @@ export class HelperPage {
   dismiss() {
     this.viewCtrl.dismiss();
   }
+
+  reserve_state:boolean=true;
 }
