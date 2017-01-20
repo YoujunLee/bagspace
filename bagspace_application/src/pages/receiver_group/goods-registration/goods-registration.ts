@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { CategoryPage } from '../category/category';
 
+
 /*
   Generated class for the GoodsRegistration page.
 
@@ -13,7 +14,8 @@ import { CategoryPage } from '../category/category';
   templateUrl: 'goods-registration.html'
 })
 export class GoodsRegistrationPage {
-public goods_count: number = 1;
+//public goods_count: number = 1;
+goods = [];
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
@@ -21,5 +23,9 @@ public goods_count: number = 1;
   }
 goCategoryPage(){
   this.navCtrl.push(CategoryPage);
+  this.goods[this.goods.length] = "asd";
+}
+add_good(good:string){
+  this.goods[this.goods.length] = "asd";
 }
 }

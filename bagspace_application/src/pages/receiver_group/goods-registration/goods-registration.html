@@ -13,9 +13,45 @@
 </ion-header>
 
 
-<ion-content padding>
-<button *ngIf="goods_count<1" ion-button block large color="light" (click)="goCategoryPage()">+</button>
+<ion-content padding >
+<!--<button *ngIf="goods_count<1" ion-button block large color="light" (click)="goCategoryPage()">+</button>
 <br *ngIf="goods_count<1">
 <button *ngIf="goods_count<2" ion-button block large color="light" (click)="goCategoryPage()">+</button>
 <br *ngIf="goods_count<2">
+  <li *ngFor="let hero of heroes">
+  {{ hero }}
+</li>-->
+
+<div *ngFor="let good of goods" (verify_good)="add_good($evet)">
+   <ion-card (click)="goCategoryPage()" padding >
+      
+            <button ion-button  clear >
+            <ion-icon large name="close"></ion-icon>
+            </button>
+        
+        <ion-item>
+         
+        <img item-left class="home_pic" src="assets/img/bagspace.png">
+        <h1 class="font_black">iPhone7외 2개</h1>
+        <br>
+        
+         
+        </ion-item>
+       
+            
+      
+
+       
+    </ion-card>
+</div>
+<button ion-button block large color="light" (click)="goCategoryPage()">+</button>
+
+
+
+
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+   <button class="background_color2" ion-button block large color="light">확인</button>
+  </ion-toolbar>
+</ion-footer>
