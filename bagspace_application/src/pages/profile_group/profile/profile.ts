@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {  NavController, ModalController, NavParams } from 'ionic-angular';
+import {  NavController,  NavParams } from 'ionic-angular';
 import { HelperPage } from '../helper/helper';
 import { SettingPage } from '../setting/setting';
 import { InvitePage } from '../invite/invite';
@@ -10,12 +10,7 @@ import { FeedbackPage } from '../feedback/feedback';
   templateUrl: 'profile.html'
 })
 export class ProfilePage {
-  constructor(public nav: NavController, public modalCtrl: ModalController, public navParams: NavParams) {}
-
-  openModal() {
-    let modal = this.modalCtrl.create(HelperPage);
-    modal.present();
-  }
+  constructor(public nav: NavController, public navParams: NavParams) {}
 
    openPage(page) {
     this.nav.push(page);
@@ -23,4 +18,5 @@ export class ProfilePage {
   settings=SettingPage;
   invite=InvitePage;
   feedback=FeedbackPage;
+  helper=HelperPage;
 }
