@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { ProfilePage } from '../../profile_group/profile/profile';
 import { CategoryPage } from '../../receiver_group/category/category';
+import { GoodsRegistrationPage } from '../../receiver_group/goods-registration/goods-registration';
+import { GoodsRegistration2Page } from '../../goods-registration2/goods-registration2';
+
 
 @Component({
   template: `
@@ -16,5 +19,5 @@ export class TabsPage {
   rootPage = TabsPage;
   profilePage = ProfilePage;
   categoryPage = CategoryPage;
-
+  goods_registrationPage = GoodsRegistrationPage;
 }

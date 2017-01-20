@@ -1,6 +1,9 @@
-import { Component} from '@angular/core';
-import { NavController} from 'ionic-angular';
+import { Component,EventEmitter,Input,Output,ViewChild} from '@angular/core';
+import { NavController,NavParams} from 'ionic-angular';
 import {Http} from '@angular/http'
+import { GoodsRegistrationPage } from '../goods-registration/goods-registration';
+import { GoodsRegistration2Page } from '../goods-registration2/goods-registration2';
+
 /*
   Generated class for the Category page.
 
@@ -13,11 +16,15 @@ import {Http} from '@angular/http'
 })
 
 export class CategoryPage {
+  
+  cosmetics=["스킨","로션","수분크림"];
+  daily_supplies=["과자","물","쌀"];
+  clothes=["장갑","신발","코트"];
  public isActive1: boolean = false;
  public isActive2: boolean = false;
  public isActive3: boolean = false;
  myclass: string="on";
-     constructor(public navCtrl: NavController) {
+     constructor(public navCtrl: NavController,public navParams: NavParams) {
   
   }
  onlyone(isActive:number){
@@ -38,5 +45,11 @@ export class CategoryPage {
    this.isActive1 = false;
    }
  }
+
+goback(good:string){
+  
+  
+  this.navCtrl.push(GoodsRegistration2Page);
+}
 
  } 
