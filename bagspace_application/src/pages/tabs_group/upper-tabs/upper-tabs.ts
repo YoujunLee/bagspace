@@ -18,4 +18,9 @@ import { Component, trigger, state, style, transition, animate } from '@angular/
 })
 export class UpperTabsPage {
   search_click:string='close';
+  date_info:string;
+  
+ 
+
+
 }

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { GoodsRegistrationPage } from '../goods-registration/goods-registration';
 
 /*
   Generated class for the GoodsRegistration2 page.

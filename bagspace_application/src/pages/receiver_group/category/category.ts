@@ -1,7 +1,6 @@
-import { Component,EventEmitter,Input,Output,ViewChild} from '@angular/core';
+import { Component, ViewChild} from '@angular/core';
 import { NavController,NavParams} from 'ionic-angular';
-import {Http} from '@angular/http'
-import { GoodsRegistrationPage } from '../goods-registration/goods-registration';
+
 import { GoodsRegistration2Page } from '../goods-registration2/goods-registration2';
 
 /*
