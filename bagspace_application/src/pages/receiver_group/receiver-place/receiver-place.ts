@@ -6,7 +6,9 @@ import { AlertController } from 'ionic-angular';
 @Component({
   selector: 'page-receiver-place',
   templateUrl: 'receiver-place.html',
+
   styles: []
+
 })
 export class ReceiverPlacePage {
 
