@@ -14,9 +14,9 @@
   -->
     <ion-list>
       <ion-list-header>도착 날짜</ion-list-header>
-      <ion-item (click)="showCalendar()">
+      <ion-item class="font_black" (click)="showCalendar()">
       <div *ngIf="!isClick">
-      <ion-note>날짜를 설정하세요</ion-note>
+      <ion-note >날짜를 설정하세요</ion-note>
       </div>
       <ion-icon name="calendar" item-right large></ion-icon>
       {{selectedDate}}
