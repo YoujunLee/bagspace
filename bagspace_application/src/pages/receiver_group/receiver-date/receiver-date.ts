@@ -29,15 +29,6 @@ export class ReceiverDatePage {
     });
 
   }
- 
-  /*
-  press(){
-  Calendar.createCalendar('MyCalendar').then(
-  (msg) => { console.log(msg); },
-  (err) => { console.log(err); }
-  );
-  }
-  */
 
   showCalendar(){
     this.datePicker.showCalendar();
