@@ -1,19 +1,13 @@
 <ion-content>
      <ion-navbar [color]="isAndroid ? 'danger' : 'primary'">
-          <ion-searchbar  *ngIf="search_click=='close'" (click)="search_click='open'" placeholder="어디로 가시나요?" ></ion-searchbar>
-          <button  *ngIf="search_click=='open'" (click)="search_click='close'" class="font_black" full ion-button outline><ion-icon name="ios-arrow-up"></ion-icon></button>
-          <div [@Title]="search_click"  [@SlidMenu]="search_click">
-          
-          <span ion-datepicker (ionChanged)="setDate($event);" [value]="localDate" [min]="localDate" full="true" calendar="true" clear class="ScheduleDate">
-            <span>{{localDate | date}}                
-                <button ion-button full outline class="upper-tab-button"><ion-icon item-left name="md-calendar"></ion-icon>날짜</button>
-            </span>
-          </span>
-          
-          <button ion-button full outline class="upper-tab-button"><ion-icon item-left name="md-globe"></ion-icon>도착지</button>
-          
-          </div>
+          <ion-searchbar  *ngIf="search_click=='close'" (click)="search_click='open'" showCancelButton placeholder="어디로 가시나요?" value="{{date|date}}"></ion-searchbar>
+          <div *ngIf="search_click=='open'" (click)="search_click='close'" class="font_black content_center" ><ion-icon name="ios-arrow-up"></ion-icon></div>
      </ion-navbar>
+    
+          <div class="tab_back"  [@Title]="search_click"  [@SlidMenu]="search_click">
+          <div *ngIf="search_click=='open'" (click)="showCalendar()" class="cal-button"><ion-icon item-left large name="md-calendar"></ion-icon>날짜</div>  
+          <div *ngIf="search_click=='open'" class="dep-button"><ion-icon item-left name="md-globe"></ion-icon>도착지</div>
+          </div>
     <ion-slides pager autoplay="3000" loop class="home_slide">
         <ion-slide>
             <h1>Slide 1</h1>
@@ -44,5 +38,6 @@
             </button>
         </ion-item>
     </ion-card>
+    <img src="https://s3.ap-northeast-2.amazonaws.com/bagspace/product_pic/bagspace">
 
 </ion-content>
