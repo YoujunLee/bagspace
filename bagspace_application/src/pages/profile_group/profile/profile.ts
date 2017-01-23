@@ -1,19 +1,22 @@
 import { Component } from '@angular/core';
-import {  ModalController, NavParams } from 'ionic-angular';
+import {  NavController,  NavParams } from 'ionic-angular';
 import { HelperPage } from '../helper/helper';
-//import { SettingPage } from '../setting/setting';
+import { SettingPage } from '../setting/setting';
+import { InvitePage } from '../invite/invite';
+import { FeedbackPage } from '../feedback/feedback';
 
 @Component({
   selector: 'page-profile',
   templateUrl: 'profile.html'
 })
 export class ProfilePage {
+  constructor(public nav: NavController, public navParams: NavParams) {}
 
-  constructor(public modalCtrl: ModalController, public navParams: NavParams) {}
-  openModal() {
-    let modal = this.modalCtrl.create(HelperPage);
-    modal.present();
+   openPage(page) {
+    this.nav.push(page);
   }
-  
-  //setting=SettingPage;
+  settings=SettingPage;
+  invite=InvitePage;
+  feedback=FeedbackPage;
+  helper=HelperPage;
 }

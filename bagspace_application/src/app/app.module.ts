@@ -1,5 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { DatePickerModule } from 'datepicker-ionic2';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
@@ -15,7 +16,7 @@ import { ReceiverModule } from './modules/receiver.module';
     LoginPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp), DatePickerModule,
     ProfileModule, TabModule,ReceiverModule
   ],
   bootstrap: [IonicApp],

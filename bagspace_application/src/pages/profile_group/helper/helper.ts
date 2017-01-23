@@ -11,4 +11,8 @@ export class HelperPage {
   dismiss() {
     this.viewCtrl.dismiss();
   }
+
+  reserve_state:boolean=true;
+  payment_state:boolean=true;
+  fee_state:boolean=true;
 }

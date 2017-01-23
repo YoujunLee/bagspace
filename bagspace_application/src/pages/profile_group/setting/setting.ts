@@ -1,22 +1,18 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, ModalController, NavParams } from 'ionic-angular';
+import { RulePage } from '../setting_group/rule/rule';
 
-/*
-  Generated class for the Setting page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   selector: 'page-setting',
   templateUrl: 'setting.html'
 })
 export class SettingPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SettingPage');
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController,  public navParams: NavParams) {}
+    
+  openModal(page) {
+    let modal = this.modalCtrl.create(page);
+    modal.present();
   }
 
+  rule=RulePage;
 }

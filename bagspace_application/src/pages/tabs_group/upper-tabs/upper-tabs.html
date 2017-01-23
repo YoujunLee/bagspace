@@ -3,8 +3,15 @@
           <ion-searchbar  *ngIf="search_click=='close'" (click)="search_click='open'" placeholder="어디로 가시나요?" ></ion-searchbar>
           <button  *ngIf="search_click=='open'" (click)="search_click='close'" class="font_black" full ion-button outline><ion-icon name="ios-arrow-up"></ion-icon></button>
           <div [@Title]="search_click"  [@SlidMenu]="search_click">
-          <button ion-button full outline class="upper-tab-button"><ion-icon item-left name="md-calendar"></ion-icon>날짜</button>
+          
+          <span ion-datepicker (ionChanged)="setDate($event);" [value]="localDate" [min]="localDate" full="true" calendar="true" clear class="ScheduleDate">
+            <span>{{localDate | date}}                
+                <button ion-button full outline class="upper-tab-button"><ion-icon item-left name="md-calendar"></ion-icon>날짜</button>
+            </span>
+          </span>
+          
           <button ion-button full outline class="upper-tab-button"><ion-icon item-left name="md-globe"></ion-icon>도착지</button>
+          
           </div>
      </ion-navbar>
     <ion-slides pager autoplay="3000" loop class="home_slide">
@@ -25,45 +32,7 @@
         <h1 class="font_black">iPhone7외 2개</h1>
         </ion-item>
         <ion-item>
-            <ion-icon name="navigate" item-left large></ion-icon>
-            <h2 class="font_black">France, Paris, WI 53703</h2>
-            <p>bagspace 민박</p>
-        </ion-item>
-
-        <ion-item>
-            <span item-left>Due: 2017/2/2</span>
-            <button ion-button icon-left clear item-right>
-            <ion-icon large name="arrow-round-forward"></ion-icon>
-            </button>
-        </ion-item>
-    </ion-card>
-
-     <ion-card padding>
-        <ion-item>
-        <img item-left class="home_pic" src="assets/img/bagspace.png">
-        <h1 class="font_black">iPhone7외 2개</h1>
-        </ion-item>
-        <ion-item>
-            <ion-icon name="navigate" item-left large></ion-icon>
-            <h2 class="font_black">France, Paris, WI 53703</h2>
-            <p>bagspace 민박</p>
-        </ion-item>
-
-        <ion-item>
-            <span item-left>Due: 2017/2/2</span>
-            <button ion-button icon-left clear item-right>
-            <ion-icon large name="arrow-round-forward"></ion-icon>
-            </button>
-        </ion-item>
-    </ion-card>
-
-     <ion-card padding>
-        <ion-item>
-        <img item-left class="home_pic" src="assets/img/bagspace.png">
-        <h1 class="font_black">iPhone7외 2개</h1>
-        </ion-item>
-        <ion-item>
-            <ion-icon name="navigate" item-left large></ion-icon>
+            <ion-icon name="ios-navigate" item-left large></ion-icon>
             <h2 class="font_black">France, Paris, WI 53703</h2>
             <p>bagspace 민박</p>
         </ion-item>
