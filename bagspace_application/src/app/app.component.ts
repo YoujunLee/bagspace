@@ -2,15 +2,20 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { HomePage } from '../pages/home/home';
-import { MoverFirstPage } from '../pages/mover-first/mover-first';
-//import { ReceiverPlaceDatePage } from '../pages/receiver-place-date/receiver-place-date';
-import { PopoverPage } from '../pages/popover/popover';
+import { ReceiverPlacePage } from '../pages/receiver_group/receiver-place/receiver-place';
+import { ReceiverDatePage } from '../pages/receiver_group/receiver-date/receiver-date';
+import { TestPage } from '../pages/test/test';
+
+import { ViewchildComponent } from '../pages/viewchild';
+
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = PopoverPage;
+ rootPage = ReceiverPlacePage;
+ // rootPage = TestPage; 
+ //rootPage = ReceiverDatePage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {

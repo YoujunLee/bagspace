@@ -2,28 +2,39 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { MoverFirstPage } from '../pages/mover-first/mover-first';
-import { ReceiverPlaceDatePage } from '../pages/receiver-place-date/receiver-place-date';
-import { PopoverPage } from '../pages/popover/popover';
+import { ReceiverPlacePage } from '../pages/receiver_group/receiver-place/receiver-place';
+import { ReceiverDatePage } from '../pages/receiver_group/receiver-date/receiver-date';
+//ionic2-datepicker calendar import
+import { DatePickerModule } from 'datepicker-ionic2';
+
+//ionic2-date-picker
+import { DatePicker } from 'ionic2-date-picker/ionic2-date-picker';
+import { TestPage } from '../pages/test/test';
+
+//import { ViewchildComponent, Item, ItemComponent } from '../pages/viewchild';
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    MoverFirstPage,
-    ReceiverPlaceDatePage,
-    PopoverPage
+    ReceiverPlacePage,
+    ReceiverDatePage,
+    DatePicker,
+    TestPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    DatePickerModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    MoverFirstPage,
-    ReceiverPlaceDatePage,
-    PopoverPage
+    ReceiverPlacePage,
+    ReceiverDatePage,
+    DatePicker,
+    TestPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

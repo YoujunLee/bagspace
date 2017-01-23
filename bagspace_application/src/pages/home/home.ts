@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { MoverFirstPage } from '../mover-first/mover-first';
-import { ReceiverPlaceDatePage } from '../receiver-place-date/receiver-place-date';
+import { ReceiverPlacePage } from '../receiver_group/receiver-place/receiver-place';
 
 @Component({
   selector: 'page-home',
@@ -13,12 +12,8 @@ export class HomePage {
     
   }
 
-  goMoverFirst(){
-    this.navCtrl.push(MoverFirstPage);
-  }
-
-  goReceiverPlaceDate(){
-    this.navCtrl.push(ReceiverPlaceDatePage);
+  move(){
+    this.navCtrl.push(ReceiverPlacePage);
   }
 
 }
