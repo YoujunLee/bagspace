@@ -161,7 +161,7 @@ export class ReceiverPlacePage {
   //다음 버튼
   moveDate(){
 
-    if(this.isLandmarkClick == true)
+    if( (this.isCityClick==true) && (this.isLandmarkClick == true) )
       this.navCtrl.push(ReceiverDatePage);
     else if(this.isCityClick == true){
       this.landmarkAlert();

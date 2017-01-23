@@ -6,6 +6,8 @@ import { ReceiverPlacePage } from '../pages/receiver_group/receiver-place/receiv
 import { ReceiverDatePage } from '../pages/receiver_group/receiver-date/receiver-date';
 //ionic2-datepicker calendar import
 import { DatePickerModule } from 'datepicker-ionic2';
+import { MoverApplyPage } from '../pages/mover_group/mover-apply/mover-apply';
+import { ChattingRoomPage } from '../pages/chatting-room/chatting-room';
 
 //ionic2-date-picker
 import { DatePicker } from 'ionic2-date-picker/ionic2-date-picker';
@@ -21,7 +23,9 @@ import { TestPage } from '../pages/test/test';
     ReceiverPlacePage,
     ReceiverDatePage,
     DatePicker,
-    TestPage
+    TestPage,
+    MoverApplyPage,
+    ChattingRoomPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -34,7 +38,9 @@ import { TestPage } from '../pages/test/test';
     ReceiverPlacePage,
     ReceiverDatePage,
     DatePicker,
-    TestPage
+    TestPage,
+    MoverApplyPage,
+    ChattingRoomPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
