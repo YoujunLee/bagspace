@@ -9,6 +9,7 @@ import { LoginPage } from '../pages/login/login';
 import { ProfileModule } from './modules/profile.module';
 import { TabModule } from './modules/tab.module';
 import { ReceiverModule } from './modules/receiver.module';
+<<<<<<< HEAD
 =======
 import { ReceiverPlacePage } from '../pages/receiver_group/receiver-place/receiver-place';
 import { ReceiverDatePage } from '../pages/receiver_group/receiver-date/receiver-date';
@@ -25,12 +26,20 @@ import { TestPage } from '../pages/test/test';
 
 >>>>>>> moverFirstPage
 
+=======
+import { DatePicker } from 'ionic2-date-picker/ionic2-date-picker';
+>>>>>>> 24e36841e906cb1e991d16072c9ca68db1dc4c44
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
 <<<<<<< HEAD
+<<<<<<< HEAD
     LoginPage
+=======
+    LoginPage,
+    DatePicker
+>>>>>>> 24e36841e906cb1e991d16072c9ca68db1dc4c44
   ],
   imports: [
     IonicModule.forRoot(MyApp), DatePickerModule,
@@ -53,6 +62,7 @@ import { TestPage } from '../pages/test/test';
     MyApp,
     HomePage,
 <<<<<<< HEAD
+<<<<<<< HEAD
     LoginPage
 =======
     ReceiverPlacePage,
@@ -62,6 +72,10 @@ import { TestPage } from '../pages/test/test';
     MoverApplyPage,
     ChattingRoomPage
 >>>>>>> moverFirstPage
+=======
+    LoginPage,
+    DatePicker
+>>>>>>> 24e36841e906cb1e991d16072c9ca68db1dc4c44
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

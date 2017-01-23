@@ -1,4 +1,4 @@
-import { Component, ViewChild} from '@angular/core';
+import { Component} from '@angular/core';
 import { NavController,NavParams} from 'ionic-angular';
 
 import { GoodsRegistration2Page } from '../goods-registration2/goods-registration2';
