@@ -4,6 +4,7 @@ import { HelperPage } from '../helper/helper';
 import { SettingPage } from '../setting/setting';
 import { InvitePage } from '../invite/invite';
 import { FeedbackPage } from '../feedback/feedback';
+import { MoverApplyPage } from '../mover-apply/mover-apply';
 
 @Component({
   selector: 'page-profile',
@@ -19,4 +20,5 @@ export class ProfilePage {
   invite=InvitePage;
   feedback=FeedbackPage;
   helper=HelperPage;
+  mover=MoverApplyPage;
 }
